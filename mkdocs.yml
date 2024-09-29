@@ -1,0 +1,12 @@
+site_name: Evan Humphry
+site_url: https://evahhumphry.com/mysite
+theme:
+  name: material 
+  palette:
+    scheme: slate
+    primary: blue
+    accent: deep purple
+extra_css:
+  - stylesheets/extra.css
+extra_javascript:
+  - javascripts/extra.js
