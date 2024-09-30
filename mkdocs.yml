@@ -1,6 +1,9 @@
 site_name: Evan Humphry
 site_url: https://evahhumphry.com/mysite
 theme:
+  features:
+    - navigation.tabs
+    - navigation.indexes
   name: material 
   palette:
     scheme: slate
@@ -10,3 +13,5 @@ extra_css:
   - stylesheets/extra.css
 extra_javascript:
   - javascripts/extra.js
+plugins:
+  - blog
