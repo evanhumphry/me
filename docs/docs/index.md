@@ -14,7 +14,7 @@ vim ~/.bashrc
 Add the alias at the end of the file.
 
 `
-alias mycommand='cd ~/some/directory
+alias mycommand='cd ~/some/directory/'
 `
 save and exit.
 
