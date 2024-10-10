@@ -5,6 +5,20 @@ A list of commands and notes to myself for reference.
 ## Powershell Commands
 
 ## Linux Commands
+**Creating Aliases**
+`
+vim ~/.bashrc
+`
+Add to the command to the end of the file
+`
+alias mycommand='cd ~/some/directory
+`
+save and exit.
+
+Run the file to apply the new alias
+`
+. ~/.bashrc
+`
 
 ### VIM Commands
 **Esc**
