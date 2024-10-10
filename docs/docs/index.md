@@ -10,7 +10,8 @@ A list of commands and notes to myself for reference.
 `
 vim ~/.bashrc
 `
-Add to the command to the end of the file
+
+Add the alias at the end of the file.
 
 `
 alias mycommand='cd ~/some/directory
