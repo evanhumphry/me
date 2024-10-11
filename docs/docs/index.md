@@ -66,6 +66,17 @@ Run the file to apply the new alias
 `:%s/old/new/g` Replaces all occurrences of old with new.
 
 ## Generating and Configuring SSH
+1. `**ssh-keygen -t ed25519**` and hit [enter] or [return].
+2. When it says, “`Enter file in which to save the key (/Users/yourname/.ssh/id_ed25519):`”, hit [enter] or [return].
+3. When it says, “`Enter passphrase (empty for no passphrase):`”, hit [enter] or [return].
+4. When it says, “`Enter same passphrase again:`”, hit [enter] or [return].
+5. See the line that starts, “`Your public key has been saved in`” and ends in “`id_ed25519.pub`”? **That’s the file placed on the other server**.
+6. If the key needs to be copied (like for github) **In a text editor, open “`id_ed25519.pub`”**.
+    - **Windows?** Type `**notepad .ssh/id_ed25519.pub**`
+    - **Mac?** Type `**open -e .ssh/id_ed25519.pub**`
+    - It should be a single line like this:  
+    `ssh-ed25519 AAAAC3Nz5AAAAIPIXO5icj4LUpqa2baqYQRmCZ1+NV4sBDr you@computer`
+7. Otherwise type `**ssh-copy-id server2**` to copy the public key to the remote server. It will be located at `~/.ssh/authorized_keys`
 
 ## Cisco Commands
 
