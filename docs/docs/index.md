@@ -27,7 +27,7 @@ Run the file to apply the new alias
 ### VIM Commands
 `Esc` Switches from input mode to command mode. Press this key before typing any command.
 ``
-`i, a` Switches from command mode to input mode at (i) or after (a) the current cursor position.
+`i or a` Switches from command mode to input mode at (i) or after (a) the current cursor position.
 
 `o` Opens a new line below the current cursor position and goes to input mode.
 
