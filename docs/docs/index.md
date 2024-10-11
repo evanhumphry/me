@@ -71,7 +71,7 @@ Run the file to apply the new alias
 3. When it says, “`Enter passphrase (empty for no passphrase):`”, hit [enter] or [return].
 4. When it says, “`Enter same passphrase again:`”, hit [enter] or [return].
 5. See the line that starts, “`Your public key has been saved in`” and ends in “`id_ed25519.pub`”? **That’s the file placed on the other server**.
-6. If the key needs to be copied (like for github) **In a text editor, open “`id_ed25519.pub`”**.
+6. If the key needs to be configured for something like github then **In a text editor, open “`id_ed25519.pub`”**.
     - **Windows?** Type `**notepad .ssh/id_ed25519.pub**`
     - **Mac?** Type `**open -e .ssh/id_ed25519.pub**`
     - It should be a single line like this:  
