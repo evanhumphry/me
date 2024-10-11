@@ -25,85 +25,45 @@ Run the file to apply the new alias
 `
 
 ### VIM Commands
-**Esc**
+`Esc` Switches from input mode to command mode. Press this key before typing any command.
+``
+`i, a` Switches from command mode to input mode at (i) or after (a) the current cursor position.
 
-Switches from input mode to command mode. Press this key before typing any command.
+`o` Opens a new line below the current cursor position and goes to input mode.
 
-**i, a**
+`:wq` Writes the current file and quits.
 
-Switches from command mode to input mode at (i) or after (a) the current cursor position.
+`:q!` Quits the file without applying any changes. The ! forces the command to do its work. Add the ! only if you really know what you are doing.
 
-**o**
+:w filename Writes the current file with a new filename.
 
-Opens a new line below the current cursor position and goes to input mode.
+`dd` Deletes the current line and places the contents of the deleted line into memory.
 
-**:wq**
+`yy` Copies the current line.
 
-Writes the current file and quits.
+`p` Pastes the contents that have been cut or copied into memory.
 
-**:q!**
+`v` Enters visual mode, which allows you to select a block of text using the arrow keys. Use d to cut the selection or y to copy it.
 
-Quits the file without applying any changes. The ! forces the command to do its work. Add the ! only if you really know what you are doing.
+`u` Undoes the last command. Repeat as often as necessary.
 
-**:w filename**
+`Ctrl-r` Redoes the last undo. (Cannot be repeated more than once.)
 
-Writes the current file with a new filename.
+`gg` Goes to the first line in the document.
 
-**dd**
+`G` Goes to the last line in the document.
 
-Deletes the current line and places the contents of the deleted line into memory.
+`/text` Searches for text from the current cursor position forward.
 
-**yy**
+`?text` Searches for text from the current cursor position backward.
 
-Copies the current line.
+`^` Goes to the first position in the current line.
 
-**p**
+`$` Goes to the last position in the current line.
 
-Pastes the contents that have been cut or copied into memory.
+`!ls` Adds the output of ls (or any other command) in the current file.
 
-**v**
-
-Enters visual mode, which allows you to select a block of text using the arrow keys. Use d to cut the selection or y to copy it.
-
-**u**
-
-Undoes the last command. Repeat as often as necessary.
-
-**Ctrl-r**
-
-Redoes the last undo. (Cannot be repeated more than once.)
-
-**gg**
-
-Goes to the first line in the document.
-
-**G**
-
-Goes to the last line in the document.
-
-**/text**
-
-Searches for text from the current cursor position forward.
-
-**?text**
-
-Searches for text from the current cursor position backward.
-
-**^**
-
-Goes to the first position in the current line.
-
-**$**
-
-Goes to the last position in the current line.
-
-**!ls**
-
-Adds the output of ls (or any other command) in the current file.
-
-**:%s/old/new/g**
-
-Replaces all occurrences of old with new.
+`:%s/old/new/g` Replaces all occurrences of old with new.
 
 ## Generating and Configuring SSH
 
