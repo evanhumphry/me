@@ -65,6 +65,32 @@ Run the file to apply the new alias
 
 `:%s/old/new/g` Replaces all occurrences of old with new.
 
+## Tmux Commands
+`tmux` Create a new tmux session
+
+`ctrl+b+s` Open current running sessions
+
+`ctrl+b+%` Split Panes Vertically
+
+`ctl+b+%` Split Panes Horizontally
+
+`ctrl+b+:` Command Mode
+
+`ctrl+b+ an arrow key` Navigate up down left and right
+
+`ctrl+b+d` Detach from a session
+
+`tmux ls` View sessions
+
+`tmux attach` Attache to previous session
+
+To close a specific session, use `tmux list-sessions` to identify the session you want to kill, and then use `tmux kill-session -t targetSession` to kill that specific session.
+
+kill all tmux processes with `pkill -f tmux`.
+
+
+
+
 ## Generating and Configuring SSH
 1. `**ssh-keygen -t ed25519**` and hit [enter] or [return].
 2. When it says, “`Enter file in which to save the key (/Users/yourname/.ssh/id_ed25519):`”, hit [enter] or [return].
