@@ -72,7 +72,7 @@ Run the file to apply the new alias
 
 `ctrl+b+%` Split Panes Vertically
 
-`ctl+b+%` Split Panes Horizontally
+`ctl+b+"` Split Panes Horizontally
 
 `ctrl+b+:` Command Mode
 
@@ -82,7 +82,9 @@ Run the file to apply the new alias
 
 `tmux ls` View sessions
 
-`tmux attach` Attache to previous session
+`tmux attach` or `tumux a` Attache to previous session
+
+`tmux a -t session_name` Attache to a particular session
 
 To close a specific session, use `tmux list-sessions` to identify the session you want to kill, and then use `tmux kill-session -t targetSession` to kill that specific session.
 
@@ -103,6 +105,16 @@ kill all tmux processes with `pkill -f tmux`.
     - It should be a single line like this:  
     `ssh-ed25519 AAAAC3Nz5AAAAIPIXO5icj4LUpqa2baqYQRmCZ1+NV4sBDr you@computer`
 7. Otherwise type `**ssh-copy-id server2**` to copy the public key to the remote server. It will be located at `~/.ssh/authorized_keys`
+
+## SCP
+To copy from local machine to remote host
+`scp /from/path/file user@domain.com:/destination/path/`
+
+To copy from remote host to local machine
+`scp remote ip:/home/remote_dir/sample_example.txt home/Desktop`
+
+To copy directory
+`scp -r /from/path/dir user@domain.com:/destination/path/dir`
 
 ## Cisco Commands
 
