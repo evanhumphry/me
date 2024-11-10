@@ -104,7 +104,7 @@ kill all tmux processes with `pkill -f tmux`.
     - **Mac?** Type `**open -e .ssh/id_ed25519.pub**`
     - It should be a single line like this:  
     `ssh-ed25519 AAAAC3Nz5AAAAIPIXO5icj4LUpqa2baqYQRmCZ1+NV4sBDr you@computer`
-7. Otherwise type `**ssh-copy-id server2**` to copy the public key to the remote server. It will be located at `~/.ssh/authorized_keys`
+7. Copy the key to the remote server`**ssh-copy-id user@remoteserver**` It will be located at `~/.ssh/authorized_keys`
 
 ## SCP
 To copy from local machine to remote host
